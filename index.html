@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <head>
+	<script src="jquery-3.2.1.min.js"></script>
 </head>
 <body>
-<h1>Making learning Dutch easier</h1>
+	var word = 'hoofd';                
+	$.get('http://www.woorden.org/woord/' + word, function(response) {                    
+	  console.log(response);
+	});
+
 </body>
